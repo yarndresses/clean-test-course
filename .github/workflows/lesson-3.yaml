@@ -6,7 +6,7 @@ on:
       - lesson-3
 jobs:
   deploy:
-    needs: [function test]
+    needs: [function_test]
     runs-on: ubuntu-latest
     defaults:
       run:
@@ -19,7 +19,7 @@ jobs:
       - name: '**PLACEHOLDER** Deploy to Elastic Beanstalk'
         run: echo Placeholder for Deployment
 
-  function test:
+  function_test:
     runs-on: ubuntu-latest
     defaults:
       run:
